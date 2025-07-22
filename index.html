@@ -6,32 +6,49 @@
   <meta name="theme-color" content="#000000" />
   <title>realanimeverseai</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.png" sizes="32x32" type="image/png" />
+  <!-- 🧠 Open Graph (para compartir en redes) -->
+  <meta property="og:title" content="realanimeverseai" />
+  <meta property="og:description" content="Explora el universo anime con inteligencia artificial: curso, comunidad y más." />
+  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:url" content="https://realanimeverseai.com" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Font: tipo iOS -->
+  <!-- 📱 Web App Iconos -->
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+
+  <!-- ⚡ Precarga de recursos -->
+  <link rel="preload" as="video" href="images/video.mp4" type="video/mp4">
+  <link rel="preload" as="image" href="images/logo.png" type="image/png">
+  <link rel="preload" as="style" href="style.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <link rel="preload" as="audio" href="sounds/click.mp3" type="audio/mpeg">
+
+  <!-- 🅰️ Tipografía iOS -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 
-  <!-- Estilos -->
+  <!-- 🎨 Estilos -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Font Awesome -->
+  <!-- 🎯 Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- Video de fondo -->
+  <!-- 🎥 Video de fondo -->
   <video autoplay muted loop playsinline id="bg-video">
     <source src="images/video.mp4" type="video/mp4" />
     Tu navegador no soporta video HTML5.
   </video>
 
-  <!-- Encabezado -->
+  <!-- 🚀 Logo -->
   <header>
     <img src="images/logo.png" alt="Logo RealAnimeVerseAI" class="header-logo" loading="lazy" />
   </header>
 
-  <!-- Enlaces -->
+  <!-- 🔗 Enlaces -->
   <main>
     <section class="social-links">
       <a href="https://payhip.com/b/rz6Ep" target="_blank" class="social-link" aria-label="Comprar curso IA">
@@ -48,15 +65,15 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- 🧾 Footer -->
   <footer>
     <p>&copy; 2025 realanimeverseai</p>
   </footer>
 
-  <!-- Sonido de clic -->
+  <!-- 🔊 Sonido de clic -->
   <audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
 
-  <!-- Scripts -->
+  <!-- 💡 Scripts -->
   <script>
     document.querySelectorAll('.social-link').forEach(btn => {
       btn.addEventListener('click', () => {
